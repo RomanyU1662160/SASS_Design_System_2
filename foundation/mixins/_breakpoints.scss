@@ -1,0 +1,82 @@
+//// @access public
+//// @group mixins
+
+/// This mixin is used to apply css based on device, device name should be passed as argument.
+/// @group mixins
+/// @access public
+/// @name device
+/// @parameter {string} $deviceName [desktop] - accepted values are 'mobile', 'tablet', 'desktop', 'large-desktop'
+/// @example - css  apply styling by defined devices.
+/// .body {
+/// font-size: 16px;
+///
+///  @include device("mobile) {
+///    font-size: 18px;
+///  }
+/// }
+@mixin device($deviceName: 'desktop') {
+  @if map-has-key($devices, $deviceName) {
+    @media (min-width: map-get($devices, $deviceName)) {
+      @content;
+    }
+  } @else {
+    @error 'No #{$deviceName} device found in $devices map.';
+  }
+}
+
+/// This mixin is used to apply css for a mobile device.
+/// @group mixins
+/// @access public
+/// @name mobile
+/// @example - css  apply styles for screen < 32rem 512px.
+/// .body {
+/// font-size: 16px;
+///
+///  @include mobile {
+///    font-size: 18px;
+///  }
+/// }
+
+@mixin mobile {
+  @media (max-width: map-get($devices, 'mobile')) {
+    @content;
+  }
+}
+
+/// This mixin is used to apply css for a tablet device.
+/// @group mixins
+/// @access public
+/// @name tablet
+/// @example - css  apply styles for screen < 48rem 768px.
+/// .body {
+/// font-size: 16px;
+///
+///  @include tablet {
+///    font-size: 18px;
+///  }
+/// }
+
+@mixin tablet {
+  @media (max-width: map-get($devices, 'tablet')) {
+    @content;
+  }
+}
+
+/// This mixin is used to apply css for a desktop device.
+/// @group mixins
+/// @access public
+/// @name desktop
+/// @example - css  apply styles for screen < 64rem 1028px.
+/// .body {
+/// font-size: 18px;
+///
+///  @include desktop {
+///    font-size: 16px;
+///  }
+/// }
+
+@mixin desktop {
+  @media (max-width: map-get($devices, 'desktop')) {
+    @content;
+  }
+}

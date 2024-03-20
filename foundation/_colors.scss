@@ -1,0 +1,91 @@
+/* Global Text Colors */
+$body-text-color: var(--body-text-color, $dark) !default;
+$body-bg-color: var(--body-bg-color, $white) !default;
+
+/* define brand Colors */
+$primary: var(--primary, $blue-400) !default;
+$primary-light: var(--primary-light, $blue-300) !default;
+$primary-dark: var(--primary-dark, $blue-600) !default;
+
+$secondary: var(--secondary, $gray-400) !default;
+$secondary-light: var(--secondary-light, $gray-300) !default;
+$secondary-dark: var(--secondary-dark, $gray-600) !default;
+
+$success: var(--success, $green-400) !default;
+$success-light: var(--success-light, $green-300) !default;
+$success-dark: var(--success-dark, $green-600) !default;
+
+$warning: var(--warning, $yellow-400) !default;
+$warning-light: var(--warning-light, $yellow-300) !default;
+$warning-dark: var(--warning-dark, $yellow-600) !default;
+
+$danger: var(--danger, $red-400) !default;
+$danger-light: var(--danger-light, $red-300) !default;
+$danger-dark: var(--danger-dark, $red-600) !default;
+
+/*=====  colors map  ======*/
+$brandColors: (
+  'primary': $primary,
+  'primary-light': $primary-light,
+  'primary-dark': $primary-dark,
+  'secondary': $secondary,
+  'secondary-light': $secondary-light,
+  'secondary-dark': $secondary-dark,
+  'success': $success,
+  'success-light': $success-light,
+  'success-dark': $success-dark,
+  'warning': $warning,
+  'warning-light': $warning-light,
+  'warning-dark': $warning-dark,
+  'danger': $danger,
+  'danger-light': $danger-light,
+  'danger-dark': $danger-dark,
+) !default;
+
+/* Buttons colors  */
+/*
+$btn-primary-color: var(--btn-primary-color, $white) !default;
+$btn-primary-bg: var(--btn-primary-bg, $primary) !default;
+$btn-primary-border: var(--btn-primary-border, $primary) !default;
+$btn-primary-hover-bg: var(--btn-primary-hover-bg, $primary-dark) !default;
+
+$btn-secondary-color: var(--btn-secondary-color, $white) !default;
+$btn-secondary-bg: var(--btn-secondary-bg, $secondary) !default;
+$btn-secondary-border: var(--btn-secondary-border, $secondary) !default;
+$btn-secondary-hover-bg: var(
+  --btn-secondary-hover-bg,
+  $secondary-dark
+) !default;
+
+$btn-success-color: var(--btn-success-color, $white) !default;
+$btn-success-bg: var(--btn-success-bg, $success) !default;
+$btn-success-border: var(--btn-success-border, $success) !default;
+$btn-success-hover-bg: var(--btn-success-hover-bg, $success-dark) !default;
+
+$btn-danger-color: var(--btn-danger-color, $white) !default;
+$btn-danger-bg: var(--btn-danger-bg, $danger) !default;
+$btn-danger-border: var(--btn-danger-border, $danger) !default;
+$btn-danger-hover-bg: var(--btn-danger-hover-bg, $danger-dark) !default;
+*/
+
+/* Forms color */
+/*
+$form-input-color: var(--form-input-color, $dark) !default;
+$form-input-bg: var(--form-input-bg, $white) !default;
+$form-input-border: var(--form-input-border, $secondary) !default;
+$form-input-focus-border: var(--form-input-focus-border, $primary) !default;
+$form-input-focus-bg: var(--form-input-focus-bg, $white) !default;
+$form-input-error-border: var(--form-input-error-border, $danger) !default;
+*/
+
+/* Navbar color */
+
+/*
+$navbar-bg: var(--navbar-bg, $primary) !default;
+$navbar-text-color: var(--navbar-text-color, $white) !default;
+$navbar-hover-bg: var(--navbar-hover-bg, $secondary-dark) !default;
+
+$navbar-bg-inverse: var(--navbar-bg-inverse, $white) !default;
+$navbar-text-color-inverse: var(--navbar-text-color-inverse, $dark) !default;
+$navbar-hover-bg-inverse: var(--navbar-hover-bg-inverse, $secondary) !default;
+*/

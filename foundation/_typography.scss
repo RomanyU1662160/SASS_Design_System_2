@@ -1,0 +1,43 @@
+/* Body Text Sizes */
+$body-font-size: var(--body-font-size, $fs-sm) !default;
+$body-font-weight: var(--body-font-weight, $fw-regular) !default;
+$body-line-height: var(--body-line-height, $lh-md) !default;
+$body-font-color: var(--body-font-color, $dark) !default;
+$body-font-family: var(--body-font-family, $raleway) !default;
+
+/* Heading Text Sizes */
+$h1-font-size: var(--h1-font-size, $h-1) !default;
+$h1-font-weight: var(--h1-font-weight, $fw-bolder) !default;
+$h1-line-height: var(--h1-line-height, $lh-lg) !default;
+$h1-font-color: var(--h1-font-color, $dark) !default;
+$h1-font-family: var(--h1-font-family, $raleway) !default;
+
+$h2-font-size: var(--h2-font-size, $h-2) !default;
+$h2-font-weight: var(--h2-font-weight, $fw-bold) !default;
+$h2-font-height: var(--h2-font-height, $lh-lg) !default;
+$h2-font-color: var(--h2-font-color, $dark) !default;
+$h2-font-family: var(--h2-font-family, $raleway) !default;
+
+$h3-font-size: var(--h3-font-size, $h-3) !default;
+$h3-font-weight: var(--h3-font-weight, $fw-bold) !default;
+$h3-line-height: var(--h3-line-height, $lh-lg) !default;
+$h3-font-color: var(--h3-font-color, $dark) !default;
+$h3-font-family: var(--h3-font-family, $raleway) !default;
+
+$h4-font-size: var(--h4-font-size, $h-4) !default;
+$h4-font-weight: var(--h4-font-weight, $fw-bold) !default;
+$h4-line-height: var(--h4-line-height, $lh-lg) !default;
+$h4-font-color: var(--h4-font-color, $dark) !default;
+$h4-font-family: var(--h4-font-family, $raleway) !default;
+
+$h5-font-size: var(--h5-font-size, $h-5) !default;
+$h5-font-weight: var(--h5-font-weight, $fw-bold) !default;
+$h5-line-height: var(--h5-line-height, $lh-lg) !default;
+$h5-font-color: var(--h5-font-color, $dark) !default;
+$h5-font-family: var(--h5-font-family, $raleway) !default;
+
+$h6-font-size: var(--h6-font-size, $h-6) !default;
+$h6-font-weight: var(--h6-font-weight, $fw-bold) !default;
+$h6-line-height: var(--h6-line-height, $lh-lg) !default;
+$h6-font-color: var(--h6-font-color, $dark) !default;
+$h6-font-family: var(--h6-font-family, $raleway) !default;

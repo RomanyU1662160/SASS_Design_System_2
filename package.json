@@ -1,0 +1,14 @@
+{
+  "name": "design_system_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass:doc": "sassdoc ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "normalize-scss": "^8.0.0"
+  }
+}

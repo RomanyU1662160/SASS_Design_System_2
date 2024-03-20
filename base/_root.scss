@@ -1,0 +1,7 @@
+/* // define variables in the root scope to override the default values in the foundation
+ */
+
+:root {
+  --btn-primary-color: #{$white};
+  --navbar-bg: #{$primary};
+}

@@ -1,0 +1,16 @@
+/* the normalize-scss will reset normalize browser's default setting */
+
+/* We import the package here and then import it in the global.scss */
+
+/*=============================================
+=            RESET CSS            =
+=============================================*/
+
+/**
+ *
+ * reset all css elements using the normalize.scss package 
+ * About normalize.css: https://nicolasgallagher.com/about-normalize-css/
+   *    https://www.npmjs.com/package/normalize-scss
+ */
+/*=====  End of RESET CSS  ======*/
+@import 'node_modules/normalize-scss/sass/normalize/import-now';

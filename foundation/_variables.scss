@@ -1,0 +1,261 @@
+//// @access public
+
+// we use sassdoc for auto generate documentation which will create a documentation for the variables under sassdoc folder
+// https://sassdoc.com/
+
+/*----------   Colors variables  ----------*/
+
+/* Natural colors */
+
+$black: #000000;
+$dark: #1d1d1d;
+$dark-light: #737680;
+$dark-dark: #000000;
+
+$white: #ffffff;
+$white-dark: #f5f5f5;
+
+/* DS colors */
+
+$green-100: #9ee2b0;
+$green-200: #7ed9a0;
+$green-300: #5ece7b;
+$green-400: #3e9e5e;
+$green-500: #1e6e41;
+$green-600: #1a5c3a;
+$green-700: #144a33;
+$green-800: #10382c;
+
+$gray-100: #f5f5f5;
+$gray-200: #e0e0e0;
+$gray-300: #bdbdbd;
+$gray-400: #9e9e9e;
+$gray-500: #757575;
+$gray-600: #616161;
+$gray-700: #424242;
+$gray-800: #212121;
+
+$red-100: #f5bfbf;
+$red-200: #f88d8d;
+$red-300: #f55e5e;
+$red-400: #f22e2e;
+$red-500: #f50000;
+$red-600: #d40000;
+$red-700: #b30000;
+$red-800: #910000;
+
+$blue-100: #bfdeff;
+$blue-200: #8fc5ff;
+$blue-300: #5faaff;
+$blue-400: #2f8fff;
+$blue-500: #005fff;
+$blue-600: #0048cc;
+$blue-700: #003999;
+$blue-800: #002b66;
+
+$yellow-100: #fff5bf;
+$yellow-200: #fff08f;
+$yellow-300: #ffe95f;
+$yellow-400: #ffe32f;
+$yellow-500: #ffdd00;
+$yellow-600: #d4b300;
+$yellow-700: #917a00;
+$yellow-800: #665200;
+
+$yellow: #f5a623;
+$yellow-light: #f5e0bf;
+
+/*----------  Typography variables ----------*/
+
+/*=============================================
+=            font families            =
+=============================================*/
+
+/// @group Typography/FontFamilies
+/// @type Font families
+/// @name Playfair
+/// @example font-family: var(--$playfair);
+$playfair: 'Playfair Display', serif;
+
+/// @group Typography/FontFamilies
+/// @type Font families
+/// @name Raleway
+$raleway: 'Raleway', sans-serif;
+
+/// @group Typography/FontFamilies
+/// @type Font families
+/// @name Roboto
+$roboto: 'Roboto', sans-serif;
+
+/*=============================================
+=            font sizes            =
+=============================================*/
+
+/// @group Typography/FontSizes
+/// @type Font sizes
+/// @name fs-xxs
+/// @example font-size: var(--$fs-xxs);
+
+$fs-xxs: 0.5rem; // 8px
+$fs-xs: 0.75rem; // 12px
+$fs-sm: 0.875rem; // 14px
+/// @group Typography/FontSizes
+/// @type Font sizes
+/// @name fs-md
+/// @example font-size: var(--$fs-md);
+$fs-md: 1rem; // 16px
+/// @group Typography/FontSizes
+/// @type Font sizes
+/// @name fs-lg
+/// @example font-size: var(--$fs-lg);
+$fs-lg: 1.125rem; // 18px
+$fs-xl: 1.25rem; // 20px
+$fs-xxl: 1.5rem; // 24px
+$fs-xxxl: 2rem; // 32px
+$fs-xxxxl: 2.5rem; // 40px
+
+/*=====  End of font sizes  ======*/
+
+/*=============================================
+=           Heading font sizes           =
+=============================================*/
+
+/// @group Typography/HeadingFontSizes
+/// @type Heading font sizes
+/// @name h1
+$h-1: 2rem; // 32px
+
+/// @group Typography/HeadingFontSizes
+/// @type Heading font sizes
+/// @name h2
+/// @example font-size: var(--$h-2);
+$h-2: 1.5rem; // 24px
+
+/// @group Typography/HeadingFontSizes
+/// @type Heading font sizes
+/// @name h3
+/// @example font-size: var(--$h-3);
+/// @example font-size: var(--$h-3);
+$h-3: 1.25rem; // 20px
+
+/// @group Typography/HeadingFontSizes
+/// @type Heading font sizes
+/// @name h4
+/// @example font-size: var(--$h-4);
+/// @example font-size: var(--$h-4);
+$h-4: 1.125rem; // 18px
+
+/// @group Typography/HeadingFontSizes
+/// @type Heading font sizes
+/// @name h5
+/// @example font-size: var(--$h-5);
+$h-5: 1rem; // 16px
+
+/// @group Typography/HeadingFontSizes
+/// @type Heading font sizes
+/// @name h6
+/// @example font-size: var(--$h-6);
+$h-6: 0.75rem; // 14px
+
+/*=============================================
+=           font weights          =
+=============================================*/
+
+/// @group Typography/FontWeights
+/// @type Font weights
+/// @name fw-light
+/// @example font-weight: var(--$fw-light);
+$fw-light: 300;
+/// @group Typography/FontWeights
+/// @type Font weights
+/// @name fw-regular
+/// @example font-weight: var(--$fw-regular);
+$fw-regular: 400;
+
+/// @group Typography/FontWeights
+/// @type Font weights
+/// @name fw-medium
+/// @example font-weight: var(--$fw-medium);
+$fw-medium: 500;
+
+/// @group Typography/FontWeights
+/// @type Font weights
+/// @name fw-bold
+$fw-bold: 700;
+
+/// @group Typography/FontWeights
+/// @type Font weights
+/// @name fw-bolder
+/// @example font-weight: var(--$fw-black);
+$fw-bolder: 900;
+
+/*=============================================
+=            line heights            =
+=============================================*/
+
+/// @group Typography/LineHeights
+/// @type Line heights
+/// @name lh-xs
+/// @example line-height: var(--$lh-xs);
+$lh-xs: 1.2rem;
+
+/// @group Typography/LineHeights
+/// @type Line heights
+/// @name lh-sm
+/// @example line-height: var(--$lh-sm);
+$lh-sm: 1.4rem;
+
+/// @group Typography/LineHeights
+/// @type Line heights
+/// @name lh-md
+/// @example line-height: var(--$lh-md);
+$lh-md: 1.6rem;
+
+/// @group Typography/LineHeights
+/// @type Line heights
+/// @name lh-lg
+/// @example line-height: var(--$lh-lg);
+$lh-lg: 1.8rem;
+
+/*=============================================
+=            Spacing            =
+=============================================*/
+$spaces: (
+  'xxs': 0.25rem,
+  'xs': 0.5rem,
+  'sm': 0.75rem,
+  'md': 1rem,
+  'lg': 1.25rem,
+  'xl': 1.5rem,
+  'xxl': 2rem,
+  'xxxl': 2.5rem,
+  'xxxxl': 3rem,
+);
+
+/*=============================================
+=            Breakpoints            =
+=============================================*/
+$breakpoints: (
+  xsm: 16rem,
+  // 256px
+  sm: 32rem,
+  // 512px
+  md: 48rem,
+  // 768px
+  lg: 64rem,
+  // 1024px
+  xl: 80rem,
+  // 1280px
+  xxl: 96rem,
+  // 1536px
+);
+
+/*=============================================
+=            Devices            =
+=============================================*/
+$devices: (
+  mobile: map-get($breakpoints, 'sm'),
+  tablet: map-get($breakpoints, 'md'),
+  desktop: map-get($breakpoints, 'lg'),
+  large-desktop: map-get($breakpoints, 'xl'),
+);
