@@ -5,15 +5,18 @@
   "main": "index.js",
   "scripts": {
     "doc:generate": "sassdoc .",
-    "stylelint:scss": "npx stylelint \"**/*.scss\" --fix",
-    "stylelint:css": "npx stylelint \"**/*.css\" --fix",
-    "lint:fix": "npm run stylelint:scss && npm run stylelint:css",
-    "lint": "npx stylelint \"**/*.scss\" && npx stylelint \"**/*.css\""
+    "stylelint:scss": "npx stylelint \"**/*.scss\" ",
+    "stylelint:css": "npx stylelint \"**/*.css\"",
+    "lint": "npm run stylelint:scss  && npm run stylelint:css",
+    "lint:fix": "npm run stylelint:scss --fix && npm run stylelint:css --fix",
+    "prepare": "husky"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "eslint-config-prettier": "^9.1.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "normalize-scss": "^8.0.0",
     "prettier": "3.2.5",
     "stylelint": "^16.2.1",
