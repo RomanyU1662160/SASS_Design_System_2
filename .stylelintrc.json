@@ -1,0 +1,16 @@
+{
+    "extends": [
+        "stylelint-config-sass-guidelines",
+        "prettier",
+        "stylelint-prettier/recommended"
+    ],
+    "rules": {
+        "selector-no-qualifying-type": null,
+        "declaration-block-single-line-max-declarations": null,
+        "scss/no-global-function-names": null,
+        "indentation": 2
+    },
+    
+        "ignoreFiles": ["sassdoc/**/*css"]
+      
+}

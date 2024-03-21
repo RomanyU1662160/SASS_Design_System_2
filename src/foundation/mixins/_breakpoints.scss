@@ -14,7 +14,7 @@
 ///    font-size: 18px;
 ///  }
 /// }
-@mixin device($deviceName: 'desktop') {
+@mixin device($deviceName: "desktop") {
   @if map-has-key($devices, $deviceName) {
     @media (min-width: map-get($devices, $deviceName)) {
       @content;
@@ -38,7 +38,7 @@
 /// }
 
 @mixin mobile {
-  @media (max-width: map-get($devices, 'mobile')) {
+  @media (max-width: map-get($devices, "mobile")) {
     @content;
   }
 }
@@ -57,7 +57,7 @@
 /// }
 
 @mixin tablet {
-  @media (max-width: map-get($devices, 'tablet')) {
+  @media (max-width: map-get($devices, "tablet")) {
     @content;
   }
 }
@@ -76,7 +76,7 @@
 /// }
 
 @mixin desktop {
-  @media (max-width: map-get($devices, 'desktop')) {
+  @media (max-width: map-get($devices, "desktop")) {
     @content;
   }
 }
