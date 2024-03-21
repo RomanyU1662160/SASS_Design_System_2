@@ -38,7 +38,7 @@
 /// }
 
 @mixin mobile {
-  @media (max-width: map-get($devices, "mobile")) {
+  @media screen and (max-width: map-get($devices, "mobile")) {
     @content;
   }
 }

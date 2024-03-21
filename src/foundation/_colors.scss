@@ -6,24 +6,20 @@ $body-bg-color: var(--body-bg-color, $white) !default;
 $primary: var(--primary, $blue-400) !default;
 $primary-light: var(--primary-light, $blue-300) !default;
 $primary-dark: var(--primary-dark, $blue-600) !default;
-
 $secondary: var(--secondary, $gray-400) !default;
 $secondary-light: var(--secondary-light, $gray-300) !default;
 $secondary-dark: var(--secondary-dark, $gray-600) !default;
-
 $success: var(--success, $green-400) !default;
 $success-light: var(--success-light, $green-300) !default;
 $success-dark: var(--success-dark, $green-600) !default;
-
 $warning: var(--warning, $yellow-400) !default;
 $warning-light: var(--warning-light, $yellow-300) !default;
 $warning-dark: var(--warning-dark, $yellow-600) !default;
-
 $danger: var(--danger, $red-400) !default;
 $danger-light: var(--danger-light, $red-300) !default;
 $danger-dark: var(--danger-dark, $red-600) !default;
 
-/*=====  colors map  ======*/
+/* =====  colors map  ====== */
 $brand-colors: (
   "primary": $primary,
   "primary-light": $primary-light,
@@ -43,6 +39,7 @@ $brand-colors: (
 ) !default;
 
 /* Buttons colors  */
+
 /*
 $btn-primary-color: var(--btn-primary-color, $white) !default;
 $btn-primary-bg: var(--btn-primary-bg, $primary) !default;
@@ -69,6 +66,7 @@ $btn-danger-hover-bg: var(--btn-danger-hover-bg, $danger-dark) !default;
 */
 
 /* Forms color */
+
 /*
 $form-input-color: var(--form-input-color, $dark) !default;
 $form-input-bg: var(--form-input-bg, $white) !default;
