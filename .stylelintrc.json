@@ -15,9 +15,12 @@
     "scss/no-global-function-names": null,
     "at-rule-no-unknown": null,
     "scss/at-rule-no-unknown": true,
-    "scss/selector-no-redundant-nesting-selector": true
+    "scss/selector-no-redundant-nesting-selector": true,
+    "comment-empty-line-before": null
   },
   "ignoreFiles": [
-    "sassdoc/**/*css"
+    "sassdoc/**/*.css",
+    "node_modules/**/*.css",
+    "src/lib/**/*.css"
   ]
 }
