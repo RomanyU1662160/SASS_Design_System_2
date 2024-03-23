@@ -1,8 +1,5 @@
 {
-  "plugins": [
-    "stylelint-scss",
-    "stylelint-prettier"
-  ],
+  "plugins": ["stylelint-scss", "stylelint-prettier"],
   "extends": [
     "stylelint-config-sass-guidelines",
     "stylelint-prettier/recommended",

@@ -10,13 +10,15 @@ const mapTarget = path.resolve("src/lib/target");
 
 function buildStyles() {
   return gulp
-    .src(source)
-    .pipe(sass().on("error", sass.logError))
-    .pipe(gulp.dest(target));
+    .src(source) // source file
+    .pipe(sourcemaps.init()) // initialize sourcemaps first
+    .pipe(sass().on("error", sass.logError)) // compile SCSS to CSS, minify css and log errors
+    .pipe(sourcemaps.write(mapTarget)) // sourcemaps are written to .map file
+    .pipe(gulp.dest(target)); // destination folder
 }
 
 function watchChanges() {
-  gulp.watch("src/global.scss", buildStyles);
+  gulp.watch("src/global.scss", () => buildStyle);
 }
 
 exports.default = gulp.series(buildStyles, watchChanges);

@@ -9,8 +9,11 @@
     "stylelint:css": "npx stylelint \"**/*.css\"",
     "lint": "npm run stylelint:scss  && npm run stylelint:css",
     "lint:fix": "npm run stylelint:scss --fix && npm run stylelint:css --fix",
+    "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,css,scss,json,md}\"",
+    "prettier:check": "prettier --check \"**/*.{js,jsx,ts,tsx,css,scss,json,md}\"",
     "prepare": "husky",
-    "gulp": "gulp"
+    "gulp": "gulp",
+    "build": "node src/scripts/build.js"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +22,7 @@
     "eslint-config-prettier": "^9.1.0",
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "node-sass": "^9.0.0",

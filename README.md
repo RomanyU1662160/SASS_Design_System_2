@@ -8,21 +8,21 @@ To get started, follow these steps:
 
 1. Clone this repository to your local machine:
 
-    ```bash
-    git clone https://github.com/yourusername/design-system.git
-    ```
+   ```bash
+   git clone https://github.com/yourusername/design-system.git
+   ```
 
 2. Navigate to the project directory:
 
-    ```bash
-    cd design-system
-    ```
+   ```bash
+   cd design-system
+   ```
 
 3. Install dependencies using npm:
 
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 
 ## Usage
 
@@ -35,9 +35,11 @@ To auto-generate Sass documentation, use the following command:
 ```bash
 npm run doc:create
 ```
+
 This will generate documentation based on the comments in your Sass files and make it accessible in the docs directory.
 
 ## Compiling Sass to CSS
+
 You can compile the Sass code into CSS using one of the two commands provided:
 
 **Using Gulp:**
@@ -59,11 +61,13 @@ npm run build
 This command uses the node-sass library and its configurations defined in the directory `structure/scripts`. It offers an alternative approach to compiling Sass into CSS. Choose the method that best fits your project requirements and workflow preferences.
 
 ## Overriding Default Variables
+
 This design system allows users to override default variables to customize various aspects of the design. You can find these variables in the `src/styles/settings` directory. Feel free to modify these variables according to your project requirements.
 
-
 ## Contributing
+
 We welcome contributions to improve and expand this design system. If you have suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
 
 ## License
+
 This project is licensed under the MIT License.
