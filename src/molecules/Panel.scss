@@ -1,0 +1,8 @@
+@import "../foundation/all";
+
+.panel-primary {
+  background-color: $primary;
+  color: $white;
+  padding: map-get($spaces, "xxxl") map-get($spaces, "xxl");
+  border-radius: 5px;
+}

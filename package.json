@@ -15,7 +15,7 @@
     "gulp": "gulp",
     "build": "node src/scripts/build.js"
   },
-  "author": "",
+  "author": "Romany Sefen",
   "license": "ISC",
   "devDependencies": {
     "css-reset-and-normalize": "^2.3.6",

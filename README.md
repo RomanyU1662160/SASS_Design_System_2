@@ -26,7 +26,7 @@ To get started, follow these steps:
 
 ## Usage
 
-This design system follows the Atomic design principles, meaning it's structured in a hierarchy of atoms, molecules, organisms, foundation, and variables. You can find these components within their respective directories in the `src` folder.
+This design system follows the [Atomic design principles] (https://atomicdesign.bradfrost.com/chapter-2/#the-atomic-design-methodology), meaning it's structured in a hierarchy of `atoms`, `molecules`, `organisms`, `templates` and `pages` . You can find these components within their respective directories in the `src` folder.
 
 ### Generating Sass Docs
 

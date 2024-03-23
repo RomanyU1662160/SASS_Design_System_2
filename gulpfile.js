@@ -6,7 +6,7 @@ const fs = require("fs");
 
 const source = path.resolve("src/global.scss");
 const target = path.resolve("src/lib");
-const mapTarget = path.resolve("src/lib/target");
+const mapTarget = "";
 
 function buildStyles() {
   return gulp
@@ -18,9 +18,7 @@ function buildStyles() {
 }
 
 function watchChanges() {
-  gulp.watch("src/global.scss", () => buildStyle);
+  gulp.watch("src/global.scss", () => buildStyles);
 }
 
 exports.default = gulp.series(buildStyles, watchChanges);
-
-// fs.writeFileSync(path.resolve(target), result.css.toString());
