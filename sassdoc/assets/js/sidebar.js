@@ -3,16 +3,16 @@
     this.conf = $.extend(
       {
         // Collapsed class
-        collapsedClass: "is-collapsed",
+        collapsedClass: 'is-collapsed',
 
         // Storage key
-        storageKey: "_sassdoc_sidebar_index",
+        storageKey: '_sassdoc_sidebar_index',
 
         // Index attribute
-        indexAttribute: "data-slug",
+        indexAttribute: 'data-slug',
 
         // Toggle button
-        toggleBtn: ".js-btn-toggle",
+        toggleBtn: '.js-btn-toggle',
 
         // Automatic initialization
         init: true,
@@ -29,7 +29,7 @@
    * Initialize module
    */
   Sidebar.prototype.initialize = function () {
-    this.conf.nodes = $("[" + this.conf.indexAttribute + "]");
+    this.conf.nodes = $('[' + this.conf.indexAttribute + ']');
 
     this.load();
     this.updateDOM();
@@ -41,21 +41,21 @@
    * Load sidebar toggle
    */
   Sidebar.prototype.loadToggle = function () {
-    $("<span />", {
-      class: "layout-toggle",
-      html: "&times;",
-      "data-alt": "&#8594;",
-    }).appendTo($(".header"));
+    $('<span />', {
+      class: 'layout-toggle',
+      html: '&times;',
+      'data-alt': '&#8594;',
+    }).appendTo($('.header'));
 
-    $(".layout-toggle").on("click", function () {
+    $('.layout-toggle').on('click', function () {
       var $this = $(this);
       var alt;
 
-      $("body").toggleClass("sidebar-closed");
+      $('body').toggleClass('sidebar-closed');
 
       alt = $this.html();
-      $this.html($this.data("alt"));
-      $this.data("alt", alt);
+      $this.html($this.data('alt'));
+      $this.data('alt', alt);
     });
   };
 
@@ -64,7 +64,7 @@
    */
   Sidebar.prototype.load = function () {
     var index =
-      "localStorage" in global
+      'localStorage' in global
         ? global.localStorage.getItem(this.conf.storageKey)
         : null;
 
@@ -99,7 +99,7 @@
 
     for (item in this.index) {
       if (this.index[item] === false) {
-        $("[" + this.conf.indexAttribute + '="' + item + '"]').addClass(
+        $('[' + this.conf.indexAttribute + '="' + item + '"]').addClass(
           this.conf.collapsedClass,
         );
       }
@@ -110,7 +110,7 @@
    * Save index in storage
    */
   Sidebar.prototype.save = function () {
-    if (!("localStorage" in global)) {
+    if (!('localStorage' in global)) {
       return;
     }
 
@@ -134,15 +134,15 @@
 
     // Toggle all
     $(this.conf.toggleBtn).on(
-      "click",
+      'click',
       $.proxy(function (event) {
         $node = $(event.target);
 
-        text = $node.attr("data-alt");
-        $node.attr("data-alt", $node.text());
+        text = $node.attr('data-alt');
+        $node.attr('data-alt', $node.text());
         $node.text(text);
 
-        fn = collapsed === true ? "removeClass" : "addClass";
+        fn = collapsed === true ? 'removeClass' : 'addClass';
 
         this.conf.nodes.each(
           $.proxy(function (index, item) {
@@ -151,7 +151,7 @@
 
             this.index[slug] = collapsed;
 
-            $("[" + this.conf.indexAttribute + '="' + slug + '"]')[fn](
+            $('[' + this.conf.indexAttribute + '="' + slug + '"]')[fn](
               this.conf.collapsedClass,
             );
           }, this),
@@ -164,7 +164,7 @@
 
     // Toggle item
     this.conf.nodes.on(
-      "click",
+      'click',
       $.proxy(function (event) {
         $item = $(event.target);
         slug = $item.attr(this.conf.indexAttribute);

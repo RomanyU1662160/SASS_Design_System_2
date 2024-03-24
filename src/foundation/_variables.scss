@@ -69,17 +69,17 @@ $yellow-light: #f5e0bf;
 /// @type Font families
 /// @name Playfair
 /// @example font-family: var(--$playfair);
-$playfair: "Playfair Display", serif;
+$playfair: 'Playfair Display', serif;
 
 /// @group Typography/FontFamilies
 /// @type Font families
 /// @name Raleway
-$raleway: "Raleway", sans-serif;
+$raleway: 'Raleway', sans-serif;
 
 /// @group Typography/FontFamilies
 /// @type Font families
 /// @name Roboto
-$roboto: "Roboto", sans-serif;
+$roboto: 'Roboto', sans-serif;
 
 /* =============================================
 =            font sizes            =
@@ -216,15 +216,15 @@ $lh-lg: 1.8rem;
 =            Spacing            =
 ============================================= */
 $spaces: (
-  "xxs": 0.25rem,
-  "xs": 0.5rem,
-  "sm": 0.75rem,
-  "md": 1rem,
-  "lg": 1.25rem,
-  "xl": 1.5rem,
-  "xxl": 2rem,
-  "xxxl": 2.5rem,
-  "xxxxl": 3rem,
+  'xxs': 0.25rem,
+  'xs': 0.5rem,
+  'sm': 0.75rem,
+  'md': 1rem,
+  'lg': 1.25rem,
+  'xl': 1.5rem,
+  'xxl': 2rem,
+  'xxxl': 2.5rem,
+  'xxxxl': 3rem,
 );
 
 /* =============================================
@@ -249,8 +249,8 @@ $breakpoints: (
 =            Devices            =
 ============================================= */
 $devices: (
-  mobile: map-get($breakpoints, "sm"),
-  tablet: map-get($breakpoints, "md"),
-  desktop: map-get($breakpoints, "lg"),
-  large-desktop: map-get($breakpoints, "xl"),
+  mobile: map-get($breakpoints, 'sm'),
+  tablet: map-get($breakpoints, 'md'),
+  desktop: map-get($breakpoints, 'lg'),
+  large-desktop: map-get($breakpoints, 'xl'),
 );

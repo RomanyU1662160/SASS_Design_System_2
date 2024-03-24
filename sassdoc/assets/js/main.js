@@ -1,7 +1,7 @@
 /* global document */
 
 (function ($, global) {
-  "use strict";
+  'use strict';
 
   // Constructor
   var App = function (conf) {
@@ -36,16 +36,16 @@
     var $code;
     var switchTo;
 
-    $(".item__code--togglable").on("click", function () {
+    $('.item__code--togglable').on('click', function () {
       $item = $(this);
-      $code = $item.find("code");
+      $code = $item.find('code');
       switchTo =
-        $item.attr("data-current-state") === "expanded"
-          ? "collapsed"
-          : "expanded";
+        $item.attr('data-current-state') === 'expanded'
+          ? 'collapsed'
+          : 'expanded';
 
-      $item.attr("data-current-state", switchTo);
-      $code.html($item.attr("data-" + switchTo));
+      $item.attr('data-current-state', switchTo);
+      $code.html($item.attr('data-' + switchTo));
       Prism.highlightElement($code[0]);
     });
   };

@@ -4,15 +4,15 @@
       {
         // Search DOM
         search: {
-          items: ".sassdoc__item",
-          input: "#js-search-input",
-          form: "#js-search",
-          suggestionsWrapper: "#js-search-suggestions",
+          items: '.sassdoc__item',
+          input: '#js-search-input',
+          form: '#js-search',
+          suggestionsWrapper: '#js-search-suggestions',
         },
 
         // Fuse options
         fuse: {
-          keys: ["name"],
+          keys: ['name'],
           threshold: 0.3,
         },
 
@@ -33,9 +33,9 @@
         var $item = $(item);
 
         return {
-          group: $item.data("group"),
-          name: $item.data("name"),
-          type: $item.data("type"),
+          group: $item.data('group'),
+          name: $item.data('name'),
+          type: $item.data('type'),
           node: $item,
         };
       }),
@@ -48,25 +48,25 @@
   // Fill DOM with search suggestions
   Search.prototype.fillSuggestions = function (items) {
     var searchSuggestions = $(this.conf.search.suggestionsWrapper);
-    searchSuggestions.html("");
+    searchSuggestions.html('');
 
     var suggestions = $.map(items.slice(0, 10), function (item) {
-      var $li = $("<li />", {
-        "data-group": item.group,
-        "data-type": item.type,
-        "data-name": item.name,
+      var $li = $('<li />', {
+        'data-group': item.group,
+        'data-type': item.type,
+        'data-name': item.name,
         html:
           '<a href="#' +
           item.group +
-          "-" +
+          '-' +
           item.type +
-          "-" +
+          '-' +
           item.name +
           '"><code>' +
           item.type.slice(0, 3) +
-          "</code> " +
+          '</code> ' +
           item.name +
-          "</a>",
+          '</a>',
       });
 
       searchSuggestions.append($li);
@@ -94,25 +94,25 @@
     var self = this;
 
     // Clicking on a suggestion
-    searchSuggestions.on("click", function (e) {
+    searchSuggestions.on('click', function (e) {
       var target = $(event.target);
 
-      if (target.nodeName === "A") {
-        searchInput.val(target.parent().data("name"));
+      if (target.nodeName === 'A') {
+        searchInput.val(target.parent().data('name'));
         suggestions = self.fillSuggestions([]);
       }
     });
 
     // Filling the form
-    searchForm.on("keyup", function (e) {
+    searchForm.on('keyup', function (e) {
       e.preventDefault();
 
       // Enter
       if (e.keyCode === 13) {
         if (selected) {
           suggestions = self.fillSuggestions([]);
-          searchInput.val(selected.data("name"));
-          window.location = selected.children().first().attr("href");
+          searchInput.val(selected.data('name'));
+          window.location = selected.children().first().attr('href');
         }
 
         e.stopPropagation();
@@ -134,16 +134,16 @@
 
       if (suggestions[currentSelection]) {
         if (selected) {
-          selected.removeClass("selected");
+          selected.removeClass('selected');
         }
 
         selected = suggestions[currentSelection];
-        selected.addClass("selected");
+        selected.addClass('selected');
       }
     });
 
     searchInput
-      .on("keyup", function (e) {
+      .on('keyup', function (e) {
         if (e.keyCode !== 40 && e.keyCode !== 38) {
           currentSelection = -1;
           suggestions = self.search($(this).val());
@@ -151,7 +151,7 @@
           e.preventDefault();
         }
       })
-      .on("search", function () {
+      .on('search', function () {
         suggestions = self.search($(this).val());
       });
   };

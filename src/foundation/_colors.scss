@@ -1,4 +1,4 @@
-@import "./variables";
+@import './variables';
 /* Global Text Colors */
 $body-text-color: var(--body-text-color, $dark) !default;
 $body-bg-color: var(--body-bg-color, $white) !default;
@@ -22,21 +22,21 @@ $danger-dark: var(--danger-dark, $red-600) !default;
 
 /* =====  colors map  ====== */
 $brand-colors: (
-  "primary": $primary,
-  "primary-light": $primary-light,
-  "primary-dark": $primary-dark,
-  "secondary": $secondary,
-  "secondary-light": $secondary-light,
-  "secondary-dark": $secondary-dark,
-  "success": $success,
-  "success-light": $success-light,
-  "success-dark": $success-dark,
-  "warning": $warning,
-  "warning-light": $warning-light,
-  "warning-dark": $warning-dark,
-  "danger": $danger,
-  "danger-light": $danger-light,
-  "danger-dark": $danger-dark,
+  'primary': $primary,
+  'primary-light': $primary-light,
+  'primary-dark': $primary-dark,
+  'secondary': $secondary,
+  'secondary-light': $secondary-light,
+  'secondary-dark': $secondary-dark,
+  'success': $success,
+  'success-light': $success-light,
+  'success-dark': $success-dark,
+  'warning': $warning,
+  'warning-light': $warning-light,
+  'warning-dark': $warning-dark,
+  'danger': $danger,
+  'danger-light': $danger-light,
+  'danger-dark': $danger-dark,
 ) !default;
 
 /* Buttons colors  */
