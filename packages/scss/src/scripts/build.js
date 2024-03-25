@@ -6,8 +6,8 @@ const sass = require('node-sass');
 const path = require('path');
 const fs = require('fs');
 
-const sassSource = 'src/global.scss';
-const cssTarget = 'src/lib/global.css';
+const sassSource = 'packages/scss/src/global.scss';
+const cssTarget = 'packages/scss/src/lib/global.css';
 
 // Compile the scss file into css
 const compile = (source, target) => {
@@ -27,13 +27,15 @@ const getallComponents = () => {
   const directories = ['molecules', 'organisms', 'atoms']; // folders to look for components
 
   directories.map((folder) => {
-    const files = fs.readdirSync(`src/${folder}`); // read the directory and return an array of file names in the directory eg. ['button.scss', 'input.scss']
+    const files = fs.readdirSync(`packages/scss/src/${folder}`); // read the directory and return an array of file names in the directory eg. ['button.scss', 'input.scss']
 
     // return object with source and target to use it in the compileComponents function
-    const components = files.map((fileName) => {
-      const source = path.resolve(`src/${folder}/${fileName}`);
+    files.map((fileName) => {
+      const source = path.resolve(`packages/scss/src/${folder}/${fileName}`);
       const updatedExtension = fileName.replace('.scss', '.css');
-      const target = path.resolve(`src/lib/components/${updatedExtension}`);
+      const target = path.resolve(
+        `packages/scss/src/lib/components/${updatedExtension}`,
+      );
 
       return allComponents.push({
         source,

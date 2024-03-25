@@ -1,4 +1,4 @@
-npm run doc:generate 
+
 npm run prettier
- npm run lint:fix
+npm run lint:fix
 npm run build

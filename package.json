@@ -13,7 +13,7 @@
     "prettier:check": "prettier --check \"**/*.{js,jsx,ts,tsx,css,scss,json,md}\"",
     "prepare": "husky",
     "gulp": "gulp",
-    "build": "node src/scripts/build.js"
+    "build": "node packages/scss/src/scripts/build.js"
   },
   "author": "Romany Sefen",
   "license": "ISC",
@@ -35,6 +35,8 @@
     "stylelint-config-standard": "^36.0.0",
     "stylelint-config-standard-scss": "^13.0.0",
     "stylelint-prettier": "^5.0.0",
-    "stylelint-scss": "^6.2.1"
-  }
+    "stylelint-scss": "^6.2.1",
+    "nx": "18.1.2"
+  },
+  "nx": {}
 }
